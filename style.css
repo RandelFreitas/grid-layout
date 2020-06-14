@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "h h h" "a m m" "f f f";
+}
+
+header{
+    background: yellow;
+    grid-area: h;
+}
+
+main{
+    background: red;
+    grid-area: m;
+}
+
+aside{
+    background: blue;
+    grid-area: a;
+}
+
+footer{
+    background: green;
+    grid-area: f;
+}
+
+.vert{
+    transform: rotate(-90deg);
+}
